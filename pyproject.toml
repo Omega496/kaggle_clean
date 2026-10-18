@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaggle_clean"
+version = "0.1.0"
+description = "A fast CLI tool to rename and sanitize file names for Kaggle uploads"
+readme = "README.md"
+authors = [{ name = "Kaggle Clean Contributors" }]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+kaggle_clean = "kaggle_clean.cli:main"
+kagle_clean = "kaggle_clean.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["kaggle_clean*"]
